@@ -1,4 +1,3 @@
-# Asosiy klass
 class Shaxs:
     def __init__(self, ism, yosh, jins):
         self.ism = ism
@@ -9,7 +8,6 @@ class Shaxs:
         return f"Ism: {self.ism}, Yosh: {self.yosh}, Jins: {self.jins}"
 
 
-# Professor klassi
 class Professor(Shaxs):
     def __init__(self, ism, yosh, jins, fan, daraja):
         super().__init__(ism, yosh, jins)
@@ -19,8 +17,6 @@ class Professor(Shaxs):
     def get_info(self):
         return f"Professor: {self.ism}, Yosh: {self.yosh}, Fan: {self.fan}, Ilmiy daraja: {self.daraja}"
 
-
-# Foydalanuvchi klassi
 class Foydalanuvchi(Shaxs):
     def __init__(self, ism, yosh, jins, login, email):
         super().__init__(ism, yosh, jins)
@@ -32,9 +28,6 @@ class Foydalanuvchi(Shaxs):
 
 
 
-
-
-# Mijoz klassi
 class Mijoz(Shaxs):
     def __init__(self, ism, yosh, jins, mijoz_id, xarid_soni):
         super().__init__(ism, yosh, jins)
@@ -44,8 +37,6 @@ class Mijoz(Shaxs):
     def get_info(self):
         return f"Mijoz: {self.ism}, ID: {self.mijoz_id}, Xaridlar soni: {self.xarid_soni}"
 
-
-# Admin klassi (Foydalanuvchi vorisi)
 class Admin(Foydalanuvchi):
     def __init__(self, ism, yosh, jins, login, email, admin_daraja_bali):
         super().__init__(ism, yosh, jins, login, email)
